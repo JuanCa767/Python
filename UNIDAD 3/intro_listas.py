@@ -38,3 +38,4 @@ print(miLista)
 #Eliminar elementos por indice
 miLista.pop(1)
 print(miLista)
+

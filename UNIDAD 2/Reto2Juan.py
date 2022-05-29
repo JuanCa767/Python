@@ -8,13 +8,13 @@ def cliente(informacion:dict):
         if informacion['primer_ingreso']==True:
             valorBoleta = valorBoleta - valorBoleta* 0.05
     elif informacion['edad'] >=15:
-        atrac = 'Carroschocones'
+        atrac = 'Carros chocones'
         aptoV = True
         valorBoleta = 5000
         if informacion['primer_ingreso']==True:
             valorBoleta = valorBoleta - valorBoleta* 0.07
     elif informacion['edad'] >=7: 
-        atrac = 'Sillasvoladoras'
+        atrac = 'Sillas voladoras'
         aptoV = True
         valorBoleta = 10000
         if informacion['primer_ingreso']==True:
@@ -36,6 +36,7 @@ def cliente(informacion:dict):
     }
     
     return dictSalida
+
 
 #Definicion del diccionario 
 informacion = {
