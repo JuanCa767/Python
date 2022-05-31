@@ -1,3 +1,4 @@
+#esta es una fabrica de funciones
 
 def crear_opearicon(operacion:str):
     funcion = ''
@@ -13,7 +14,6 @@ def crear_opearicon(operacion:str):
         funcion = lambda n1,n2 : n1**n2
     else:
         funcion = lambda n1,n2 : ' Ingrese una funcion valida'
-
     return funcion
 
 
