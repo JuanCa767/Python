@@ -4,5 +4,5 @@ y retorne un cojunto de elementos de la lista
 '''
 
 convertir = lambda lista : set (lista)
-print (convertir(['juan', 'camilo', 'podro']))
+print(convertir(['juan', 'camilo', 'podro','maria']))
 

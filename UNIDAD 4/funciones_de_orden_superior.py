@@ -7,14 +7,15 @@ def funcion_orden_superior(sumar):
 
 def sumar(n1,n2):
     return n1+n2
-
+#Se crea una variable de referencia
 referencia_sumar = sumar
 otra_referencia = referencia_sumar
 ultima_referencia = otra_referencia
 #print(referencia_sumar(40,50))
-#funcion_orden_superior(sumar)
+#funcion_orden_superios(sumar)
+#funcion_orden_superior(referencia_sumar)
 
-
+#-------------------------------------------------------------------------------------
 
 def mapear_datos(funcion, lista_numeros: list)->list:
     respuesta = []
