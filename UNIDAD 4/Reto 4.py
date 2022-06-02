@@ -9,18 +9,16 @@ lista= [
 
 
 def ordenes(rutinaContable): 
-    nombreLista=[]
-    #nombreTupla=[]
-    newFactura = list(map(lambda rutinaContable: [nombreLista[0]] + list(map(lambda tupla: nombreLista[1]*nombreLista[2], nombreLista[1:])), rutinaContable))
-    newFactura = list(map(lambda rutinaContable: [nombreLista[0]] + [reduce(lambda v1,v2: round(v1 + v2,2), nombreLista[1:])], newFactura))
+
+    newFactura = list(map(lambda lista: [lista[0]] + list(map(lambda tupla: lista[1]*ista[2], lista[1:])), rutinaContable))
+    newFactura = list(map(lambda rutinaContable: [lista[0]] + [reduce(lambda v1,v2: round(v1 + v2,2), lista[1:])], newFactura))
     minimaCompra = 600000
-    newFactura = list(map(lambda newFactura: nombreLista if lista[1] >= minimaCompra else (nombreLista[0], nombreLista[1] + 25000), newFactura))
+    newFactura = list(map(lambda newFactura: lista if lista[1] >= minimaCompra else (lista[0], lista[1] + 25000), newFactura))
     print('------------------------ Inicio Registro diario ---------------------------------')
     #Ciclo para imprimir el total de cada compra
-    nombreFactura =''
-    for lista in range(len(nombreFactura)):
-        print(f'La factura {nombreFactura[lista][0]} tiene un total en pesos de {nombreFactura[lista][1]:,.2f}')
+    for n in range(len(newFactura)):
+        print(f'La factura {newFactura[n][0]} tiene un total en pesos de {newFactura[n][1]:,.2f}')
     print('-------------------------- Fin Registro diario ----------------------------------')
 
 
-print(ordenes())
+print(ordenes(lista))
