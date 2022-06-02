@@ -32,9 +32,9 @@ A partir de la lista de nombres imprima todos los nombres
 que empiezan por 'J' separados por coma. 
 NOTA: Para el resultados final los nombres deben empezar en mayúscula
 '''
-nombres= ['andrés','juan','juliana','cristian','jaime']
+nombres= ['andrés','juan','juliana','cristian','jaime', 'manuel', 'patricia']
 
-nombres = list(filter(lambda n:n[0].lower()=='j',nombres))
+nombres = list(filter(lambda n:n[0].lower()=='a',nombres))
 nombres =list(map(lambda n: n.capitalize(),nombres))
 concatenar = lambda ac, e: ac+', '+e
 respuesta= reduce(lambda ac, e: ac + ", " + e, nombres)

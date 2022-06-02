@@ -19,7 +19,14 @@ print(funcion(nombres))
 
 
 #punto 2
+
 numeros=[2,3,4,5,6,7]
+
+def elevados(lista:list):
+    resultado = lambda lista:[n**2 if n%2==0 else n**3 for n in lista]
+    return resultado
+
+print(elevados(numeros))
 
 funcion = lambda lista:[n**2 if n%2==0 else n**3 for n in lista]
 print(funcion(numeros))

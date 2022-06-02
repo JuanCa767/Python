@@ -1,13 +1,11 @@
 #Obtener el cuadrado de todos los elemmeentos de la lista
 
-from cProfile import label
-
-
 def cuadrado(elemento = 0):
     return elemento*elemento
 
 lista=[1,2,3,4,5,6,7,8,9,10]
 resultado = list(map(cuadrado,lista))
+
 print(resultado)
 
 

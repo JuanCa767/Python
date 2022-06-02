@@ -13,7 +13,7 @@ lista_numeros_1=[10,20,30,40,50,60,70,80]
 lista_numeros_2=[20,5,15,40,50,60,70,80]
 lista_principal=[lista_numeros_1, lista_numeros_2]
 
-#print(simulacion_map(elevar, lista_numeros_1))
+print(simulacion_map(elevar, lista_numeros_1))
 for lista in lista_principal:
     print(simulacion_map(elevar,lista))
 

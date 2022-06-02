@@ -16,4 +16,4 @@ for n in nombres:
 
 #--------------------------------------------------------------------------------------------
 funcion = lambda lista_nombres:[n.upper() if n[0].lower()=='j' else n.lower() for n in lista_nombres]
-#print(funcion(nombres))
+print(funcion(nombres))
