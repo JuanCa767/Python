@@ -3,17 +3,22 @@ from functools import reduce
 datos= [ [6587, ("3268", 4, 25842.99), ("8274",18,23254.99), ("6548", 9, 48951.95), ("2547", 5, 8951.95)],
     [6588, ("1254", 3, 115362.58), ("9744", 2, 99235.66)],]
 
-def ordenes(rutinaContable):
 
+
+
+def ordenes(rutinaContable):
     nFactura = list(map(lambda lista: [lista[0]] + list(map(lambda j: j[1]*j[2], lista[1:])), rutinaContable))
     nFactura = list(map(lambda lista: [lista[0]]+ [reduce(lambda v1,v2 : round(v1+v2,2), lista[1:])], nFactura))
     vlrMinimo= 600000
-    nFactura = list(map(lambda nFactura: nFactura if nFactura[1] >= vlrMinimo else (nFactura[0], nFactura[1] + 25000), nFactura))
+    nFactura = list(map(lambda x: x if x[1] <= vlrMinimo else [x[0], x[1] + 25000], nFactura))
     print('------------------------ Inicio Registro diario ---------------------------------')
     for n in range(len(nFactura)):
         print(f'La factura {nFactura[n][0]} tiene un total en pesos de {nFactura[n][1]:,.2f}')
     print('-------------------------- Fin Registro diario ----------------------------------')
    
+
+
+
 
 print(ordenes([ 
  [1201, ("5464", 4, 25842.99), ("7854",18,23254.99), ("8521", 9, 48951.95)], 
