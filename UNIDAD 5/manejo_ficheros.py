@@ -4,9 +4,13 @@ import numpy as np
 guion = lambda : print('\n--------------------------------------------\n')
 
 #Leer el fichero y retornar un dataframe
-movies = pd.read_csv('https://raw.githubusercontent.com/luisguillermomolero/MisionTIC2022_2/master/Modulo1_Python_MisionTIC2022_Main/Semana_5/Reto/movies.csv')
+movies = pd.read_csv('C:/Users/Juan/Documents/GitHub/Python/UNIDAD 5/movies.csv')
+#movies = pd.read_csv('https://raw.githubusercontent.com/luisguillermomolero/MisionTIC2022_2/master/Modulo1_Python_MisionTIC2022_Main/Semana_5/Reto/movies.csv')
 print(movies.info())
 print( movies.describe() )
+
+
+
 
 guion()
 gross_earnings = movies['Gross Earnings']
