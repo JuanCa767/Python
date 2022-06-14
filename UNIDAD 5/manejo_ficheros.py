@@ -6,16 +6,16 @@ guion = lambda : print('\n--------------------------------------------\n')
 #Leer el fichero y retornar un dataframe
 movies = pd.read_csv('C:/Users/Juan/Documents/GitHub/Python/UNIDAD 5/movies.csv')
 #movies = pd.read_csv('https://raw.githubusercontent.com/luisguillermomolero/MisionTIC2022_2/master/Modulo1_Python_MisionTIC2022_Main/Semana_5/Reto/movies.csv')
-print(movies.info())
-print( movies.describe() )
+#print(movies.info())
+#print( movies.describe() )
 
 
 
 
 guion()
 gross_earnings = movies['Gross Earnings']
-print(gross_earnings.head())
-print(gross_earnings.tail())
+#print(gross_earnings.head())
+#print(gross_earnings.tail())
 
 guion()
 #Reemplazar valores nulos
@@ -36,9 +36,9 @@ subDataFrame['Total likes'] = subDataFrame['Facebook Likes - Director'] + subDat
 pelis_populares = subDataFrame[ subDataFrame['Total likes'] > 50000 ]
 #print(pelis_populares)
 pelis_x_director = subDataFrame[ subDataFrame['Director'] == 'David Fincher' ]
-print( pelis_x_director )
+#print( pelis_x_director )
 
 guion()
 guion()
 tabla = pd.pivot_table(subDataFrame, index=['Director'], aggfunc=[np.sum])
-print(tabla)
+#print(tabla)

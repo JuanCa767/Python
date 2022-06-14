@@ -4,8 +4,8 @@ listaVacia = []
 lista_vacia = []
 #lista llena
 miLista = ['Juan', 20, True]
-
 print(miLista)
+
 #ver elementos de lista
 primer_elemento = miLista[0]
 print(primer_elemento)

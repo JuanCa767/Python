@@ -16,8 +16,7 @@ def listaPeliculas(rutaFileCsv: str) -> str:
             # print(subGrupoPeliculas)
 
             # Se usa las columnas "Country" y "Language" como índice para la tabla dinámica y "Gross Earnings" como tabla de resumen
-            gananciaPaisLenguaje = subGrupoPeliculas.pivot_table(
-                index=['Country', 'Language'])
+            gananciaPaisLenguaje = subGrupoPeliculas.pivot_table(index=['Country', 'Language'])
             return gananciaPaisLenguaje.head(10)
 
             # Se importa la libreria matplotlib.pyplot
